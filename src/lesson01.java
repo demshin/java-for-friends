@@ -19,12 +19,14 @@ public class lesson01 {
     }
 
     // check element in array
-    public static boolean checkElementInArray(int[] array, int element) {
+    public static int checkElementInArray(int[] array, int element) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == element) {
-                return true;
+                return i;
             }
         }
-        return false;
+        return -1;
     }
+
+
 }
