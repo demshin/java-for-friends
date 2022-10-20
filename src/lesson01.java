@@ -6,6 +6,7 @@ public class lesson01 {
         System.out.println(getMonthName(15));
         System.out.println(checkElementInArray(new int[]{1, 2, 3, 4, 5}, 3));
         System.out.println(checkElementInArray(new int[]{1, 2, 3, 4, 5}, 6));
+        System.out.println(revertString("Hello world!"));
     }
 
     // get month name by number
@@ -28,5 +29,12 @@ public class lesson01 {
         return -1;
     }
 
-
+    // revert string
+    public static String revertString(String str) {
+        String result = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            result += str.charAt(i);
+        }
+        return result;
+    }
 }
